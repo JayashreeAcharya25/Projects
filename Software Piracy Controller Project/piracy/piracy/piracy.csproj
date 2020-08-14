@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1CABAF67-2098-4FA7-9D2B-332A35DF820C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>piracy</RootNamespace>
+    <AssemblyName>piracy</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accolade_SMS">
+      <HintPath>..\..\..\Accolade_SMS.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\Database Related Files\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AES.cs" />
+    <Compile Include="bank_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bank_master.Designer.cs">
+      <DependentUpon>bank_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_password.Designer.cs">
+      <DependentUpon>change_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client_request.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="client_request.Designer.cs">
+      <DependentUpon>client_request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer.cs" />
+    <Compile Include="master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="master.Designer.cs">
+      <DependentUpon>master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="encpass.cs" />
+    <Compile Include="forgot_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgot_password.Designer.cs">
+      <DependentUpon>forgot_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdi.Designer.cs">
+      <DependentUpon>mdi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdi2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdi2.Designer.cs">
+      <DependentUpon>mdi2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="product_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="product_master.Designer.cs">
+      <DependentUpon>product_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report.designer.cs">
+      <DependentUpon>report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_creation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_creation.Designer.cs">
+      <DependentUpon>user_creation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="bank_master.resx">
+      <DependentUpon>bank_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change_password.resx">
+      <DependentUpon>change_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client_request.resx">
+      <DependentUpon>client_request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="master.resx">
+      <DependentUpon>master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgot_password.resx">
+      <DependentUpon>forgot_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdi.resx">
+      <DependentUpon>mdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdi2.resx">
+      <DependentUpon>mdi2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="product_master.resx">
+      <DependentUpon>product_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="report.resx">
+      <DependentUpon>report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_creation.resx">
+      <DependentUpon>user_creation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th1AT5Z4DN.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thABOJWO5V.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sponsorLoginImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sponsorLoginImage1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sponsorLoginImage2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8934-close-button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touchpad03_ic_prohibit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images76BRA5R4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images76BRA5R4 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linux-client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images72SYBO02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesYIBGY1VO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\master.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bungalow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bungalow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windows-client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\re-enter-pincode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guest-male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\master1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\master2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesN9VC6YHJ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesN9VC6YHJ1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesYIBGY1VO1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesN9VC6YHJ2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fractal-mirror-1920x1200_cool_twitter_backgrounds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesMR0GZ4LL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesBC9LQWDJ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesJE72QVMX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesBC9LQWDJ1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesJE72QVMX1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8934-close-button11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fractal-mirror-1920x1200_cool_twitter_backgrounds1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesN9VC6YHJ3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fractal-mirror-1920x1200_cool_twitter_backgrounds2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fractal-mirror-1920x1200_cool_twitter_backgrounds3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesN9VC6YHJ4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8934-close-button12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-button2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-button3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\862833_close_512x512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\862833_close_512x5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\862833_close_512x5122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\862833_close_512x5123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\862833_close_512x5124.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\862833_close_512x5125.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\862833_close_512x5126.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fractal-mirror-1920x1200_cool_twitter_backgrounds4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-colors-backgrounds-2060-images-hd-wallpapers-wallfoy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesADNQ9MTN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesTDG82Z8T.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images5TNVZVGS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images4MBULNI3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-magic-light-green-background-vector-illustration-your-majestic-design-element-web-design-color-31955570.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-colors-backgrounds-2060-images-hd-wallpapers-wallfoy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesJU0NUNO1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp-image-144587393.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-button4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-button5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesX7UKDUMO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images7JO3MF4T.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesX7UKDUMO1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blurred-City-Lights-Wallpaper-Hd-Backgrounds-For-Computer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesX2W2S1XK.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images7JO3MF4T1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blurred-City-Lights-Wallpaper-Hd-Backgrounds-For-Computer1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesX2W2S1XK1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paris_eiffel_tower_night_city_river_bridge_120174_4481x3365.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paris_eiffel_tower_night_city_river_bridge_120174_4481x33651.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesPNW4AXAZ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-colors-backgrounds-2060-images-hd-wallpapers-wallfoy2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F912924-D09C-4C72-8CBC-D4E9AB2BE1FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\PERSONAL\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Word.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ch10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch10.Designer.cs">
+      <DependentUpon>ch10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch11.Designer.cs">
+      <DependentUpon>ch11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch12.Designer.cs">
+      <DependentUpon>ch12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch13.Designer.cs">
+      <DependentUpon>ch13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch14.Designer.cs">
+      <DependentUpon>ch14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch15.Designer.cs">
+      <DependentUpon>ch15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch16.Designer.cs">
+      <DependentUpon>ch16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch17.Designer.cs">
+      <DependentUpon>ch17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch18.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch18.Designer.cs">
+      <DependentUpon>ch18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch19.Designer.cs">
+      <DependentUpon>ch19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch20.Designer.cs">
+      <DependentUpon>ch20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch21.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch21.Designer.cs">
+      <DependentUpon>ch21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch3.Designer.cs">
+      <DependentUpon>ch3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch2.Designer.cs">
+      <DependentUpon>ch2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch4.Designer.cs">
+      <DependentUpon>ch4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch5.Designer.cs">
+      <DependentUpon>ch5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch6.Designer.cs">
+      <DependentUpon>ch6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch7.Designer.cs">
+      <DependentUpon>ch7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch8.Designer.cs">
+      <DependentUpon>ch8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch9.Designer.cs">
+      <DependentUpon>ch9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgBox.Designer.cs">
+      <DependentUpon>MsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch1.Designer.cs">
+      <DependentUpon>ch1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontpage.Designer.cs">
+      <DependentUpon>Frontpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ch10.resx">
+      <DependentUpon>ch10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch11.resx">
+      <DependentUpon>ch11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch12.resx">
+      <DependentUpon>ch12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch13.resx">
+      <DependentUpon>ch13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch14.resx">
+      <DependentUpon>ch14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch15.resx">
+      <DependentUpon>ch15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch16.resx">
+      <DependentUpon>ch16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch17.resx">
+      <DependentUpon>ch17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch18.resx">
+      <DependentUpon>ch18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch19.resx">
+      <DependentUpon>ch19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch2.resx">
+      <DependentUpon>ch2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch20.resx">
+      <DependentUpon>ch20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch21.resx">
+      <DependentUpon>ch21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch3.resx">
+      <DependentUpon>ch3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch4.resx">
+      <DependentUpon>ch4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch5.resx">
+      <DependentUpon>ch5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch6.resx">
+      <DependentUpon>ch6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch7.resx">
+      <DependentUpon>ch7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch8.resx">
+      <DependentUpon>ch8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch9.resx">
+      <DependentUpon>ch9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgBox.resx">
+      <DependentUpon>MsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ch1.resx">
+      <DependentUpon>ch1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontpage.resx">
+      <DependentUpon>Frontpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

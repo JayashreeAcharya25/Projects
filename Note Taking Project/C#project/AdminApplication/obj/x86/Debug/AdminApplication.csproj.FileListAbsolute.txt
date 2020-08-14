@@ -1,0 +1,10 @@
+E:\Jayashree\vb\C#project\AdminApplication\bin\Debug\AdminApplication.exe
+E:\Jayashree\vb\C#project\AdminApplication\bin\Debug\AdminApplication.pdb
+E:\Jayashree\vb\C#project\AdminApplication\obj\x86\Debug\AdminApplication.csprojResolveAssemblyReference.cache
+E:\Jayashree\vb\C#project\AdminApplication\obj\x86\Debug\AdminApplication.Properties.Resources.resources
+E:\Jayashree\vb\C#project\AdminApplication\obj\x86\Debug\AdminApplication.csproj.GenerateResource.Cache
+E:\Jayashree\vb\C#project\AdminApplication\obj\x86\Debug\AdminApplication.exe
+E:\Jayashree\vb\C#project\AdminApplication\obj\x86\Debug\AdminApplication.pdb
+E:\Jayashree\vb\C#project\AdminApplication\bin\Debug\Bunifu_UI_v1.5.3.dll
+E:\Jayashree\vb\C#project\AdminApplication\obj\x86\Debug\AdminApplication.Register.resources
+E:\Jayashree\vb\C#project\AdminApplication\obj\x86\Debug\AdminApplication.Login1.resources
